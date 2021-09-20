@@ -1075,8 +1075,8 @@ services:
         - ./data/certbot/certs/:/var/certs
         - ./certbot/letsencrypt/:/var/www/letsencrypt
       environment:
-        - CN="${CERTBOT_CN}"
-        - EMAIL="${CERTBOT_EMAIL}"
+        - CN=${CERTBOT_CN}
+        - EMAIL=${CERTBOT_EMAIL}
       networks:
         - frontend
 
